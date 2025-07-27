@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<title>海も枯れるまで_自陣(えぜるKP、うゆいさん)</title>
+<style>
+*{margin:0;padding: 0;font-size: 14px;font-family : 'メイリオ',Meiryo,Osaka,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック','MS PGothic',sans-serif;}
+body{width: 100%;margin: 0;padding: 0;background-color: #f7f7f7;position: relative;}
+a{color: #666666;}
+a:hover{color: #CD0000;}
+h1{font-size: 21px;color: #666666;margin: 0px;padding: 0px;border-bottom: 1px solid #CCCCCC;}
+h2{font-size: 16px;color: #666666;margin: 5px;padding: 50px 0 0 0;border-bottom: 1px dotted #CCCCCC;}
+label{transition: all 0.2s;}
+#toggle{display: none;}
+#label_toggle{display: block;width: 100px;text-align: center;padding: 0;border: 2px solid #CD0000;background-color: #FFFFFF;color: #CD0000;border-radius: 15px;position: fixed;top: 10px;right: 10px;z-index: 1005;}
+#label_toggle:hover{background-color:#CD0000;color:#FFFFFF;}
+header{display: block;width: 0px;height: 100%;position: fixed;background-color: #FFFFFF;border-left: 1px solid #CCCCCC;z-index: 2;top: 0;right: 0;overflow-y: auto;overflow-x: hidden;transition: all 0.2s;padding: 50px 0 0 0;box-sizing: border-box;}
+#toggle:checked + header{width: 200px;}
+header label{display: block;width: 180px;margin:0 5px;padding: 5px;border-bottom: 1px dotted #EFEFEF;}
+header label input[type="checkbox"]{margin-right: 5px;}
+label:hover{cursor:pointer;background-color: #EFEFEF;}
+.wrapper{display: block;width: calc(100% - 30px);max-width: 1100px;padding: 30px 15px 100px 15px;margin: 0 AUTO;overflow: hidden;position: relative;background-color: #FFFFFF;}
+/* ログ部分 */
+dl{display: block;margin: 0;padding: 3px;box-sizing: border-box;}
+dl::after{display: block;content: "";clear: both;}
+dt{display: block;font-size: 0.8em;font-weight: bold;float: left;width: 100px;margin: 0;padding: 5px 5px;text-align: right;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+dd{display: block;width: calc(100% - 120px);margin: 0;padding: 2px;float: right;line-height: 1.8em;}
+.zatsudan{width: 95%;margin: 0 0 0 AUTO;background:#f7f7f7;border-left:1px solid #CCCCCC;}
+.other{background-color:#fff7ef;}
+.secret{width: 98%;margin: 0 0 0 AUTO;border-left:3px solid #CCCCCC;}
+.group{background:#f9f9f9;border-left:1px solid #CCCCCC;}
+@media (max-width:480px){
+  dt{display: inline-block;float: none;width: calc(100% - 6px);margin: 0;padding: 3px 0 0 3px;text-align: left;}
+  dd{display: inline-block;width: calc(100% - 6px);padding: 3px;float: none;}
+}
+</style>
+<style>
+.tab_1{background-color:#e7fff6;border-color:#0d7c35;}
+.tab_1.selected{display: none;}
+.tab_2{background-color:#ebf7ff;border-color:#63b7ff;}
+.tab_2.selected{display: none;}
+.tab_4{}
+.tab_4.selected{display: none;}
+
+</style>
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+<style>* { font-family: sans-serif !important; }</style>
+<script src="norobot.js"></script>
+</head>
+<body>
+<label for="toggle" id="label_toggle">表示/非表示</label>
+<input type="checkbox" name="toggle" id="toggle">
+<header>
+<label>▽ 非表示にするタブ</label>
+<label for="main"><input type="checkbox" onClick="Hide(this)" class="checkbox" id="main">メイン</label>
+<label for="zatsudan"><input type="checkbox" onClick="Hide(this)" class="checkbox" id="zatsudan">雑談</label>
+<label for="tab_1"><input type="checkbox" onClick="Hide(this)" class="checkbox" id="tab_1">秘匿(うゆい。,えぜるお..)</label><label for="tab_2"><input type="checkbox" onClick="Hide(this)" class="checkbox" id="tab_2">秘匿(えぜるお..,フロウ)</label><label for="tab_4"><input type="checkbox" onClick="Hide(this)" class="checkbox" id="tab_4">情報</label>
+</header>
+<div class="wrapper">
+<h1>海も枯れるまで_自陣(えぜるKP、うゆいさん)</h1>
+<h2 id="day1">海も枯れるまで_自陣(えぜるKP、うゆいさん)</h2>
+<dl style="color:#41964f" class="zatsudan tab_0"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>1d100 なんとかなるなる (1D100) ＞ 27</dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt> KP</dt><dd>秘匿HO1だヨ </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>おじさん頑張ります～ </dd></dl>
+<dl style="color:#0000ff" class="zatsudan tab_0"><dt>リタ・リートゥス</dt><dd>1D100 (1D100) ＞ 60</dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt> KP</dt><dd>HO2秘匿だヨ </dd></dl>
+<dl style="color:#0000ff" class="secret tab_2"><dt>  リタ・リートゥス</dt><dd>わーい </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>1D100&lt;=70 正気度ロール (1D100&lt;=70) ＞ 33 ＞ 成功</dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>1d3 (1D3) ＞ 1</dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt>HO1秘匿(打ち上げ直後)</dt><dd>「目の前の少年はとても綺麗な青い目をしている。不思議 で、 海を思わせるような美しい青色だ」 </dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt>HO2秘匿(打ち上げ直後)</dt><dd>「目の前の人物はとても美しい顔立ちをしている。その美しさは胸が締め付けられ、 苦しくなるほどだ」 </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>お目目～ </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt>HO1体の傷(秘匿)</dt><dd>一瞬医師の動きが止まった。手首の傷、リストカットの痕を見つけたのだ。それに加えて首元をじっと見られる。首を絞めた時の縄の跡を見ているのだろうと分かる 。 </dd></dl>
+<dl style="color:#0000ff" class="secret tab_2"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 3 ＞ 決定的成功/スペシャル</dd></dl>
+<dl style="color:#888888" class="zatsudan tab_3"><dt> KP</dt><dd>リタ・リートゥス - 今日 22:24<br>CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 3 ＞ 決定的成功/スペシャル </dd></dl>
+<dl style="color:#888888" class="zatsudan tab_3"><dt>system</dt><dd>[   リタ・リートゥス ] チケ : 0 → 1 </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>リタくん！ </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt>system</dt><dd>[ 百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ） ] SAN : 69 → 70 </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt>風呂(HO1秘匿)</dt><dd>「暖かい …気がするがなぜか心が全く穏やかではない。体の芯はひんやりとしていると感じる」 </dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=80 アイデア (1D100&lt;=80) ＞ 69 ＞ 成功</dd></dl>
+<dl style="color:#0000ff" class="secret tab_2"><dt>  リタ・リートゥス</dt><dd>リタくんは島外の人が珍しいのと、とても綺麗な人なのでヨシヒコさんのことがとても気になっています </dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=(14*5) 【DEX】 (1D100&lt;=70) ＞ 54 ＞ 成功</dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>リタくんいい子～ </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>真面目～～～～すっき </dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt>父親と昼食作り(HO2秘匿)</dt><dd>父親が話しかけてくる。<br>「不思議な彼のことだが…」<br>「しばらくこの島にいることを勧めようと思うんだ」<br>「漂流していたから安静にしなくてはいけないということもあるけど、それとはまた別の意味で安静が必要かなって思って」<br>「ここのね」<br>自身の胸をトントン指差す<br>「よかったらずっと一緒にいて、島のことやHO②が思う素敵なことを話して教えてあげてほしい」<br>「任せたよ」<br> </dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt> KP</dt><dd>カズ・ヒロ </dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=75 目星 (1D100&lt;=75) ＞ 16 ＞ 成功</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>1d3 (1D3) ＞ 2</dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ 百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ） ] SAN : 70 → 72 </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>マーレ島 </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>逆に持ってなかったらSANｃ </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt>昼食HO①秘匿</dt><dd>こそっと<br>「あの子は一人っ子で、歳の近くて年上の若者は他にあまりいなくてね」<br>「弟でもできた気持ちで接してやってくれ」<br>と、優しく微笑み「いってらっしゃい」と見送ってくれる。 </dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=75 目星 (1D100&lt;=75) ＞ 54 ＞ 成功</dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>おじさん、天然たらし属性 </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>島の人たち優しい </dd></dl>
+<dl style="color:#0000ff" class="secret tab_2"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=85 【アイデア】 (1D100&lt;=85) ＞ 41 ＞ 成功</dd></dl>
+<dl style="color:#0000ff" class="secret tab_2"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=85 【アイデア】 (1D100&lt;=85) ＞ 1 ＞ 決定的成功/スペシャル</dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt>公民館HO2 アイデア (秘匿)</dt><dd>何者かの視線を感じる。<br>見渡すとジンゴがこちらを見ていることに気づく。さっきから後をついてきているのでは？と思う。<br><br>その時 HO②が声をかけてもと背を向けてどこかへ行ってしまう。 </dd></dl>
+<dl style="color:#888888" class="group tab_4"><dt>図書館探索</dt><dd>子供向けの絵本… 「にんぎょひめ」<br>歴史の本…「ウミノシシャ」 、「人魚伝説」<br>小説… 「オカルト本」 </dd></dl>
+<dl style="color:#888888" class="group tab_4"><dt>『伝承：ウモノシシャノデンショウ』</dt><dd>イクトセニ　イチド ウミカラシシャアリ 。<br>ウミノシシャ　カミニツウズル。<br>シシャニチョウアイウケタモノ　ウミノシシャニツレテイカレ　アラタナウミノシシャニ 。<br>ソシテ ウミノシシャ　サルトキ　トチハカレユク　ウミノシシャ　エイジュウスルトキ　エラバレタトチ　キコウアンテイシ　サクモツ　リョウモ　コマルコトナシ　ウルオウ。<br> </dd></dl>
+<dl style="color:#888888" class="group tab_4"><dt>『人魚伝説』 </dt><dd>人魚とは人間の上半身と魚の下半身を持つとされる伝説上の未確認生物。アンデルセンが描いた作品が有名である。<br>不吉な象徴とされることが多く、たいていの文学作品では人魚は幸せになっていない。また歌声を聞いたものは、その美声に聞き惚れ舵を取り損ねて海底に沈んでしまうや、歌声に聞き惚れ近づいてきた人間を襲ってしまうといった伝承がある。<br>そして人魚の肉を食べたものは永遠の命を手に入れ、不老不死になるという伝承もある。 </dd></dl>
+<dl style="color:#888888" class="group tab_4"><dt>『にんぎょひめ』 </dt><dd>●はじまり<br>深い海の底、美しい神殿で人魚は暮らしていました。<br>人魚は 15 歳になると海の上に出て地上を見ることが許されます。そして一人の人魚が誕生日を迎えました。<br><br>●出会い<br>人魚が海の上に顔を出すと、海は嵐で荒れており船が沈没しかけていました。船にはとても美しい王子が乗っており、人魚は王子をひと目見て恋をしました。<br>ですが王子は海へ落ちてしまいます。人魚は王子を助けて浜辺まで運びました。人魚は目を覚ますまで声をかけ続けます。するとどこからか人間の娘がやってきて、人魚は驚き身を隠しました。同時に王子が目を覚まします。<br><br>●恋心<br>海の底に戻った人魚は王子のことが忘れられず、自分も本当の人間になって王子に会いたいと思います。人魚は魔女のところへ行き、人間にしてほしいと頼みました。<br><br>●決意<br>魔女は人魚の美しい声と引替えに、人間にしてくれこ<br>とを約束してくれました。しかし魔女が出した条件はそれだけではなく、王子が他の女性と結婚すると海の泡になって消えてしまうと言われました。人魚は全ての条件を承諾し人間になることを決めました。<br><br>●再開<br>浜辺で人間になる薬を飲んだ人魚は知らない間に眠ってしまいます。しばらくして目が覚めると傍に王子が立っていました。声を出したくても声が出せません。何も話さない彼女を自分のお城まで連れて行き、王子は人魚を妹のように可愛がってくれました。<br><br>●結婚の話<br>ある日、王子から溺れた時に助けられた娘と結婚することを人魚は聞かされました。助けたのは私だと言いたくても声が出ないのです。<br><br>●夜<br>王子の結婚式が近づいたある夜、船で移動しているころ人魚のお姉さんたちが魔法の瓶を持って現れました。<br>「この中には嵐が入っている」「朝日が昇るまでにその便を開けて二人を殺せば、海の泡にならなくて済む」と言いました。お姉さんたちはこの魔法の瓶を作ってもらうために自分たちの自慢のもの全て捧げたと言いました。あなたを助けるためになんでも犠牲にできると言いました。<br><br>●終わり<br>人魚は魔法の瓶を受け取りましたが、愛する王子を殺すことができませんでした。魔法の瓶を海へ投げて、自分も海へ飛び込み、海の泡になってしまいました。<br> </dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt>にんぎょひめHO2秘匿</dt><dd>HO②は昔、母親に読んでもらった話と最後が違うことに気付く。母親に話してもらった人魚姫は王子様と結婚して幸せに暮らしていた。 </dd></dl>
+<dl style="color:#888888" class="group tab_4"><dt>『我々が知らない怪奇の世界』 </dt><dd>とても古いオカルト本、1970 年代の昭和に発行されたもののようだ。当時流行っていたのであろう、UFO、超能力、UMA について書かれている。<br>この号で特集されているのは「幽霊船」について。<br><br>●幽霊船<br>・怪奇現象の一つで、怪談の一種として世界中で語られている。<br>・幽霊が操舵している船、もしくは船自体が幽霊というパターンがほとんど。<br>・幽霊船の周りには常に霧が出ている。<br>・基本危害を加えてくることはないが、幽霊船を無理に避けようとして事故に遭ったり、見たものが不幸になるなど様々な内容で語られている。<br>・乗務員が全員死亡し、海を漂流している船のことをいう場合もある。 </dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 88 ＞ 失敗</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=75 目星 (1D100&lt;=75) ＞ 94 ＞ 失敗</dd></dl>
+<dl style="color:#0000ff" class="secret tab_2"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=85/2 【アイデア】 (1D100&lt;=42) ＞ 88 ＞ 失敗</dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>デレッデレやん！！！！！ </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>可愛い！！！！！ </dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=75 目星 (1D100&lt;=75) ＞ 92 ＞ 失敗</dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>教会かな？？？？？ </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>地雷ワードェ </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>エッッッッ </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>たらしじゃんこのHO1 </dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=75 目星 (1D100&lt;=75) ＞ 42 ＞ 成功</dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt>崖HO①へ秘匿チャット</dt><dd>そういえば飛び降り自殺しようとしたこともあったなぁ…と思い出したりする。 </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>ですよねぇ </dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=75 目星 (1D100&lt;=75) ＞ 3 ＞ 決定的成功/スペシャル</dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>霧：南方面 </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>うんうんてぇてぇな </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>ハイパーイケメンムーヴ良き </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>移住者はそこそこ </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>不穏～～～～～～ </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt>ケイゾウHO①に秘匿チャット</dt><dd>ケイゾウがこそっと<br>「なんか困ったことあったら何でも相談してくれ！同じ元、島外の人間だしな」 </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>わしゃわしゃ </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>ケイゾウいい人～～～～ </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>こいつ何言ってるの？？ </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt> KP</dt><dd>草 </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>家族写真… </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>いいな </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt>砂浜HO①に秘匿チャット</dt><dd>冷たい海水に足をつけると、ズキンと頭がうずく。あの夜のことを思い出しそうだ…。<br>あの時のように、夜ここに立てば何か思い出せるかもしれない。 </dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt>砂浜HO②秘匿チャット</dt><dd>海水に足をつけ、浜辺に立つ HO①がとても美しく息をのむ。夢に見ていた人魚と彼が重なる。<br>夢の中で人魚だと思っていたが実は彼で、出会うのは運命だったのだと思ってしまうほどである。 </dd></dl>
+<dl style="color:#888888" class="zatsudan tab_3"><dt> KP</dt><dd>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ） - 今日 0:14<br>CCB&lt;=75 目星 (1D100&lt;=75) ＞ 3 ＞ 決定的成功/スペシャル </dd></dl>
+<dl style="color:#888888" class="main"><dt> KP</dt><dd>1日目セーブ帰宅した～ </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>島民の名前ェ </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>しょっぱなから何言ってるの？ </dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=75 目星 (1D100&lt;=75) ＞ 45 ＞ 成功</dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt>夕食HO①に秘匿チャット </dt><dd>あなたは急に誰かに腕を引っ張られ外へ連れ出される。<br>あなたを連れ出したのはジンゴだ。そのまま強い力で砂浜まで連れていかれた。<br> </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>ジンゴ～～～～ </dd></dl>
+<dl style="color:#0000ff" class="secret tab_2"><dt>  リタ・リートゥス</dt><dd>ありがとうと言われた笑顔がとても綺麗なので照れていました<br> </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>まだやってたんかい </dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 56 ＞ 成功</dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt> KP</dt><dd> </dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt>夕食HO②秘匿チャット</dt><dd>次のシーンは HO①のイベントですが好きなタイミングで乱入することができます。<br>・最初から会話を聞いていて構いません。すぐに合流せず話を聞いて様子見をすることも可能です。<br>・乱入したいときは KP へその旨を伝えてください。KP から OK が返ってきたら、RP しながら合流してください。<br> </dd></dl>
+<dl style="color:#0000ff" class="secret tab_2"><dt>  リタ・リートゥス</dt><dd>乱入します </dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt> KP</dt><dd>OKです </dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt>ケイゾウ乱入HO②へ秘匿チャット</dt><dd>そのジンゴの言葉はHO①ではなく、自分の方を見ながら言ったように感じた。 </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt>ケイゾウ乱入HO①へ秘匿チャット</dt><dd>自分に向けられた言葉のように思ったが、いろいろと含みがあるように感じた。 </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>海に向かって目星振れます？ </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>かあいい～～～ </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt> KP</dt><dd>振っても良いですよ </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=75 目星 (1D100&lt;=75) ＞ 75 ＞ 成功</dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt> KP</dt><dd>空には星が出ているものの、海は暗く良く見えない。<br>寄せては返す波の音だけが静かに聞こえてくるだろう。 </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>ありがとうございます </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>甘えんぼ…かわ… </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>かわいさに負けた </dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt> KP</dt><dd>お風呂に共に入る。よしひこの体についた傷を改めて見ることになる。痛々しいその傷を。何があって彼は自身を傷つけているのだろう…。 </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>何してんの？犯罪じゃない？平気？ </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>犯罪？は笑うww確かにそうww </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>社会的制裁エンドは回避したい </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>きっっっつ…リタぱぱぁ…；； </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt>無名作家の詩 </dt><dd>この世界はせまく、窮屈で、息苦しい<br>そこから動けないのか<br>それが世界のすべてなのか<br>動くこともままならない<br>瞬きをする事もなく<br>息も途切れ<br>足を踏み入れ、ただ沈んでいく<br>沈めば何があるのだろうか<br>沈めば何が変わるというのだろうか<br>なぜ沈んでいるのか<br>ゆらゆらと視界の端で揺れるもの<br>青と白と、そしてさまざまな色<br>何も心配しなくていい<br>私があなたを見ている<br>私があなたを守る<br>身を任せ<br>瞬きを忘れ<br>息の仕方も忘れて<br>視界いっぱいに<br>ずっと海が一面に広がっている<br> </dd></dl>
+<dl style="color:#0000ff" class="zatsudan"><dt>  リタ・リートゥス</dt><dd>鼻歌を歌いながら洗い物してます(音痴) </dd></dl>
+<dl style="color:#0000ff" class="secret tab_2"><dt>  リタ・リートゥス</dt><dd>少し前に海でブラックパールを見つけて、部屋に置いてあったことにしていいですか？<br>夜のうちにブレスレットにして機会があれば渡したいです </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt> KP</dt><dd>後で共有したければできます </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>はい </dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt> KP</dt><dd>いいですよ～～～＾＾ </dd></dl>
+<dl style="color:#888888" class="group tab_4"><dt>ボトルメール </dt><dd>『どこかにいるあなたへ<br>私は夢があります<br>行きたい学校があります<br>将来なりたい職業があります<br>好きな人がいます<br>やりたいことがたくさんあります<br><br>でもうまくいかなくて、心が苦しくて、挫折してしまいそうです<br>もしこれを読んでいる人がいてくれたのなら<br>私の夢が叶っているか、行きたい学校に行けているか、なりたい職業になれているか<br>好きな人と結婚できているか確認してほしいです<br><br>きっと私はすべて理想の通りになっています<br>そしてそれを誰かに話してほしい<br>一生懸命頑張れば努力は報われるって<br><br>私の将来の夢はドルフィントレーナーです<br>児島って地名に住んでいて、好きな人の苗字は水戸です<br>けいこ』 </dd></dl>
+<dl style="color:#888888" class="group tab_4"><dt>無名作家の詩 </dt><dd>この世界はせまく、窮屈で、息苦しい<br>そこから動けないのか<br>それが世界のすべてなのか<br>動くこともままならない<br>瞬きをする事もなく<br>息も途切れ<br>足を踏み入れ、ただ沈んでいく<br>沈めば何があるのだろうか<br>沈めば何が変わるというのだろうか<br>なぜ沈んでいるのか<br>ゆらゆらと視界の端で揺れるもの<br>青と白と、そしてさまざまな色<br>何も心配しなくていい<br>私があなたを見ている<br>私があなたを守る<br>身を任せ<br>瞬きを忘れ<br>息の仕方も忘れて<br>視界いっぱいに<br>ずっと海が一面に広がっている<br> </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt> KP</dt><dd>HO①に隠れて夜の海へ行くチャンスが訪れます。 </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>家を抜け出すことは可能ですか？ </dd></dl>
+<dl style="color:#0000ff" class="secret tab_2"><dt>  リタ・リートゥス</dt><dd>夜こっそり起きてこそこそとブレスレットつくってます </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt> KP</dt><dd>可能です。1人で抜け出す場合忍び歩きなどの隠密系技能を振ってください </dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt> KP</dt><dd>例えば布団の中でコソコソ隠れて作っている感じですかね？ </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>なんもねぇ…親からもらった「忍び歩き」でいきます </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt> KP</dt><dd>GO！GO！ </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=10 忍び歩き (1D100&lt;=10) ＞ 65 ＞ 失敗</dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>それはそう </dd></dl>
+<dl style="color:#0000ff" class="secret tab_2"><dt>  リタ・リートゥス</dt><dd>さすがに机ですかね…？疲れてるだろうし起きないよな？っていう甘々な憶測で </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>この流れで海行けます？ </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt> KP</dt><dd>ナイスRPです。出れます！ </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>よしよし </dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt> KP</dt><dd>トイレに向かったのでコソコソ作れます。 </dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt> KP</dt><dd>何か技能振ります？DEX×5とか </dd></dl>
+<dl style="color:#0000ff" class="secret tab_2"><dt>  リタ・リートゥス</dt><dd>じゃあ振ります </dd></dl>
+<dl style="color:#0000ff" class="secret tab_2"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=(14*5) 【DEX】 (1D100&lt;=70) ＞ 58 ＞ 成功</dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt> KP</dt><dd>ナイス！！ </dd></dl>
+<dl style="color:#0000ff" class="secret tab_2"><dt>  リタ・リートゥス</dt><dd>やったーー </dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt> KP</dt><dd>どんなのが作れましたかね？出来はよさそうです。 </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt> KP</dt><dd>どこに向かいますか？ </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>砂浜に </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt> KP</dt><dd>OKです。 </dd></dl>
+<dl style="color:#0000ff" class="secret tab_2"><dt>  リタ・リートゥス</dt><dd>青みがかったブラックパールを中心にビーズや貝殻などが付けられた革のブレスレットです </dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt> KP</dt><dd>うんうん、素敵です。良い＾＾ </dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt> KP</dt><dd>では聞き耳をどうぞ </dd></dl>
+<dl style="color:#0000ff" class="secret tab_2"><dt>  リタ・リートゥス</dt><dd>慶彦がまた自分を傷付けようとしたときに、オレを思い出して止めてくれればいいな……と </dd></dl>
+<dl style="color:#0000ff" class="secret tab_2"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=40 【聞き耳】 (1D100&lt;=40) ＞ 34 ＞ 成功</dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt> KP</dt><dd>玄関の扉が開く音がしました </dd></dl>
+<dl style="color:#0000ff" class="secret tab_2"><dt>  リタ・リートゥス</dt><dd>気になったので一応確認したいです </dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt> KP</dt><dd>砂浜の方へ向かうヨシヒコが見えます </dd></dl>
+<dl style="color:#0000ff" class="secret tab_2"><dt>  リタ・リートゥス</dt><dd>急いで明かりを持って追いかけます </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt> KP</dt><dd>砂浜に到着しました。<br>なにがしたいですか？ </dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt> KP</dt><dd>ブレスレットはおいていきますか？持って出ますか？ </dd></dl>
+<dl style="color:#0000ff" class="secret tab_2"><dt>  リタ・リートゥス</dt><dd>持っていきます </dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt> KP</dt><dd>OKです </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>昼間、海水に足をつけて何か思い出しそうだったので、同じようにします。 </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt> KP</dt><dd>わかりました </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt> KP</dt><dd>ずきりと痛みに近い 冷たさに 、 曇って いた記憶がもどってくる。 </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt>夜の海へHO①へ秘匿チャット</dt><dd>…あの時ふと足元、水面にキラキラと輝く何かが視界に入った。<br>それはあなたに手を伸ばし掴んでくる。手だけではない細い触手を伸ばしてきて体に巻きついてくる。<br><br>ぶよぶよとしたまるで水死体のような何か、それに海の底に引きずり込まれたのだ<br><br>異形のものに引きずりこまれたことを思い出したHO①はsanチェックです<br><br>正気度喪失 1d3/1d6  </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>1D100&lt;=72 正気度ロール (1D100&lt;=72) ＞ 9 ＞ 成功</dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>1d3 (1D3) ＞ 2</dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt> KP</dt><dd>…波打ち際に立つ HO①を見つける。美しい姿に見入ってしまい、突然立ちくらむ。<br>今寝てしまっているのか夢を見る。 </dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt>深夜徘徊HO②へ秘匿チャット</dt><dd>夢を見る<br>あなたは何かを見つけ、それを見ている<br>それはとれも美しく、とても悲しそうだ<br>あなたはそれを綺麗な人魚…ではなくHO①だと思った<br>水面にキラキラと映りこむ、それを見ている<br><br>気づけばHO①を抱えている。<br>あなたの頭の中は、助けないと助けないと助けないと助けないと…<br>ぐるぐるとそればかりめぐっているだが、ふと抱いていたそれの感触が変わる。ぶよぶよしているのだ。<br><br>見てみるとそれはヨシヒコの見るも無残な水死体だ。<br><br> 正気度喪失 1d3/1d6 </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt> KP</dt><dd>了解です </dd></dl>
+<dl style="color:#0000ff" class="secret tab_2"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=70 【SANチェック】 (1D100&lt;=70) ＞ 22 ＞ 成功</dd></dl>
+<dl style="color:#0000ff" class="secret tab_2"><dt>  リタ・リートゥス</dt><dd>1D3 (1D3) ＞ 2</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>1D100&lt;=70 正気度ロール (1D100&lt;=70) ＞ 91 ＞ 失敗</dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=68 【SANチェック】 (1D100&lt;=68) ＞ 90 ＞ 失敗</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>1d4+1 (1D4+1) ＞ 2[2]+1 ＞ 3</dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>1D4+1 (1D4+1) ＞ 4[4]+1 ＞ 5</dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[   リタ・リートゥス ] SAN値 : 68 → 63 </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>ｸﾄｩﾙﾌ始まった </dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=85 【アイデア】 (1D100&lt;=85) ＞ 91 ＞ 失敗</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=75 目星 (1D100&lt;=75) ＞ 26 ＞ 成功</dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=85 【アイデア】 (1D100&lt;=85) ＞ 44 ＞ 成功</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=80 アイデア (1D100&lt;=80) ＞ 19 ＞ 成功</dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt> KP</dt><dd>アイデアをどうぞ </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=80 アイデア (1D100&lt;=80) ＞ 13 ＞ スペシャル</dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt> KP</dt><dd>家族3人で映っている写真がないことに気づく。 </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>まま～～～ </dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 16 ＞ 成功</dd></dl>
+<dl style="color:#888888" class="group tab_4"><dt>異変後診療所ボトルメール</dt><dd>『手紙をくれたあなたへ<br>素敵なお手紙をありがとう、<br>きっとあなたは返事が来るなんて思っていなかったと思う<br>でもあなたの思いは私に届いた。もっとあなたのことを知りたい。私はこの美しい海にいる、待っているわ』<br><br>『素敵なあなたへ<br>お返事をありがとう、私は毎日この海を眺めて暮らしているの。<br>海は広くて自分の悩みなんてちっぽけだと思えるわ。<br>ここからの眺めはとても奇麗なの、あなたにも見てもらいたい』<br><br>『愛しいあなたへ<br>もう大丈夫、こちらへおいで<br>ここなら何も苦痛を感じなくできるからお子さんも奥さんも連れてきて、みんなで暮らすの<br>何も心配いらないから』 </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>現妻怖い </dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=40 【聞き耳】 (1D100&lt;=40) ＞ 44 ＞ 失敗</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=80 アイデア (1D100&lt;=80) ＞ 70 ＞ 成功</dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 59 ＞ 成功</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=75 目星 (1D100&lt;=75) ＞ 39 ＞ 成功</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>1D100&lt;=67 正気度ロール (1D100&lt;=67) ＞ 49 ＞ 成功</dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=63 【SANチェック】 (1D100&lt;=63) ＞ 35 ＞ 成功</dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ 百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ） ] SAN : 67 → 66 </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[   リタ・リートゥス ] SAN値 : 63 → 62 </dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=80 アイデア (1D100&lt;=80) ＞ 42 ＞ 成功</dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>ドキドキ </dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 100 ＞ 致命的失敗</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=75 目星 (1D100&lt;=75) ＞ 66 ＞ 成功</dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>1D3 (1D3) ＞ 2</dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[   リタ・リートゥス ] SAN値 : 62 → 60 </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>良い子なんだよなぁ </dd></dl>
+<dl style="color:#0000ff" class="secret tab_2"><dt>  リタ・リートゥス</dt><dd>わーーもう純島民全滅なのでは？(メタ) </dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=80 アイデア (1D100&lt;=80) ＞ 45 ＞ 成功</dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=60 【SANチェック】 (1D100&lt;=60) ＞ 66 ＞ 失敗</dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>1D6 (1D6) ＞ 2</dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[   リタ・リートゥス ] SAN値 : 60 → 58 </dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=58 【SANチェック】 (1D100&lt;=58) ＞ 69 ＞ 失敗</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>1D100&lt;=66 正気度ロール (1D100&lt;=66) ＞ 22 ＞ 成功</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>1d2 (1D2) ＞ 2</dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>1D6 (1D6) ＞ 1</dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ 百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ） ] SAN : 66 → 64 </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[   リタ・リートゥス ] SAN値 : 58 → 57 </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt> KP</dt><dd>青みがかったブラックパールを中心にビーズや貝殻などが付けられた革のブレスレットです </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>熱い展開だ… </dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt> KP</dt><dd>ロケットを渡されます </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt>異変後教会●HO①へ秘匿チャット</dt><dd>突然体全体が冷え切る感覚がし、息ができなくなる。口から空気を吸おうとしても吸おうとしても肺が空気で満たされない。<br> </dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt>異変後教会●HO②へ秘匿チャット</dt><dd>HO①は顔を真っ青にして口をパクパクとさせている。とても苦しそうだ。だがその顔さえ、とても美しいと感じるのだ。 </dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=50 【応急手当】 (1D100&lt;=50) ＞ 15 ＞ 成功</dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=85 【アイデア】 (1D100&lt;=85) ＞ 34 ＞ 成功</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=80 アイデア (1D100&lt;=80) ＞ 53 ＞ 成功</dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt>蘇る記憶HO①</dt><dd>息ができない、苦しい！そのさなか助けを求めるようにHO②の顔を見る。<br>彼女は心配そうな顔をあなたに向けているが、その目はキラキラと光り、まるで苦しんでいるあなたを見て目を輝かせているようだ。<br><br>･･･ ふと足元、水面にキラキラと輝く何かが視界に入った。そして貴方は冷たく、痛たく、息ができない、苦しい、正気を削られる海の底に引きずり込まれた。<br>今その正体が分かった。目の前にいる HO②だ<br>水面から現れた HO②に足を引きずられ、海の中へ連れて来られたのだ。<br>今のHO② の目と、その時の目は同じ色に輝いている。 </dd></dl>
+<dl style="color:#888888" class="secret tab_2"><dt>蘇る記憶HO②</dt><dd>助けを求めるように、苦しみながらあなたを見てくるHO①。<br>その顔はとても美しく、あなたの胸を締め付ける。<br>ああそうだ、あなたはHO①を見つけ、HO①を見ていた。<br>HO①はとれも美しく、とても悲しそうだった。<br>水面にキラキラと映りこむ、HO①を見ていた。<br>HO①はウミノシシャでも、神様でも、人魚でもない。ただのかわいそうな人間だ。<br>彼は生き苦しそうだった、今のように。だからあなたは彼を･･･。<br><br>海の底へ、ここへ連れてきたのだ。<br>ここは海で死んだ者の島、海の底に沈んでいる。今の状況が島本来の姿で、母親と自分の力で理想の形にして保っていた。<br>ここならHO①の理想の場所にできる、HO①を助けたい苦しい世界から解放してあげたい、だからHO①を海の向こうから連れてきた。<br>HO①がここに住むと、永住すると決めてくれれば苦しむことなく仲間入りすることができる。そう思っていた。<br><br>他の人が言うように、島のこの状況をどうにかするには母親しかいない。 </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>あ～～やさしい… </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>ああぁぁ </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>これお互いにお守りを渡しあうって最高にエモ… </dd></dl>
+<dl style="color:#888888" class="main"><dt> KP</dt><dd>2日目セーブ<br>次回は異変後の… </dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 48 ＞ 成功</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=75 目星 (1D100&lt;=75) ＞ 58 ＞ 成功</dd></dl>
+<dl style="color:#888888" class="group tab_4"><dt>ボトルメール</dt><dd>『海から手紙をくれた君へ<br>本当のことを話そう、もうつらくて仕方ないんだ、彼女を失ってから生きていても何も楽しいこともない、食事も何もかも味気ない。<br>この子の将来のことを考えると不安なんだ。<br>君の所に行きたい』 </dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>1D100&lt;=64 正気度ロール (1D100&lt;=64) ＞ 45 ＞ 成功</dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=57 【SANチェック】 (1D100&lt;=57) ＞ 32 ＞ 成功</dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ 百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ） ] SAN : 64 → 63 </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[   リタ・リートゥス ] SAN値 : 57 → 56 </dd></dl>
+<dl style="color:#888888" class="group tab_4"><dt>★星の母からの逃走ルール</dt><dd>●1ターンですること<br>①移動<br>HO①は▶DEX×4、HO②は▶DEX×6<br>・1人成功で2マス移動<br>・2人成功で3マス移動<br>・2人失敗でも1マス移動<br>※斜め移動可能<br><br>②HO①のCON対抗<br>▶CON×6からスタート<br>ターンが進むにつれ▶CON×5.4.3…と数値が減っていく。<br>失敗した場合▶HP-1d6<br><br>③移動のDEX対抗に成功している場合<br>▶目星もしくは▶アイデアができる。<br><br>●その他<br>HO②は一回だけHO①へ、任意のタイミング、 任意の数HP受け渡しができる。<br>受け渡した際のCON対抗は無し。<br><br>●幽霊船について<br>・1ターンにつき、1ｄ3マス進む。<br>・行動はターンの最後<br><br>●幽霊船に追いつかれた場合<br>現在いるマス目に幽霊船コマが重なった場合、即死ではないがデメリットがある。 </dd></dl>
+<dl style="color:#888888" class="main"><dt> KP</dt><dd>1R </dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=(14*6) 【移動DEX×6】 (1D100&lt;=84) ＞ 13 ＞ スペシャル</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=13*4 DEX×4 (1D100&lt;=52) ＞ 24 ＞ 成功</dd></dl>
+<dl style="color:#41964f" class="group tab_4"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd> (1D100&lt;=66) ＞ 57 ＞ 成功</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=11*6 CON×6 (1D100&lt;=66) ＞ 81 ＞ 失敗</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>1d6 (1D6) ＞ 5</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=11*5 CON×5 (1D100&lt;=55) ＞ 26 ＞ 成功</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=75 目星 (1D100&lt;=75) ＞ 15 ＞ スペシャル</dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=85 【アイデア】 (1D100&lt;=85) ＞ 41 ＞ 成功</dd></dl>
+<dl style="color:#888888" class="main"><dt> KP</dt><dd>1d3 (1D3) ＞ 1</dd></dl>
+<dl style="color:#888888" class="main"><dt> KP</dt><dd>2R </dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=(14*6) 【移動DEX×6】 (1D100&lt;=84) ＞ 75 ＞ 成功</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=13*4 DEX×4 (1D100&lt;=52) ＞ 81 ＞ 失敗</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=11*5 CON×5 (1D100&lt;=55) ＞ 97 ＞ 致命的失敗</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>1d6 (1D6) ＞ 6</dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[   リタ・リートゥス ] HP : 9 → 3 </dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 23 ＞ 成功</dd></dl>
+<dl style="color:#41964f" class="zatsudan tab_0"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>100d100 (100D100) ＞ 4127[23,63,47,74,62,17,77,44,92,55,10,46,31,26,56,1,10,41,14,67,44,29,2,80,35,31,99,3,62,4,95,7,6,76,28,48,16,69,1,16,22,12,5,49,62,81,44,35,15,3,85,19,45,6,91,48,64,44,67,46,78,53,17,9,92,20,32,38,44,72,78,29,80,11,30,50,50,53,78,67,69,15,71,2,30,55,11,14,35,5,44,76,2,12,6,7,68,97,65,12] ＞ 4127</dd></dl>
+<dl style="color:#888888" class="main"><dt>母</dt><dd>1d3 (1D3) ＞ 2</dd></dl>
+<dl style="color:#888888" class="main"><dt>母</dt><dd>3R </dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=13*4 DEX×4 (1D100&lt;=52) ＞ 17 ＞ 成功</dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=(14*6) 【移動DEX×6】 (1D100&lt;=84) ＞ 58 ＞ 成功</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=11*4 CON×4 (1D100&lt;=44) ＞ 22 ＞ 成功</dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=85 【アイデア】 (1D100&lt;=85) ＞ 35 ＞ 成功</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=75 目星 (1D100&lt;=75) ＞ 29 ＞ 成功</dd></dl>
+<dl style="color:#888888" class="main"><dt>母</dt><dd>1d3 (1D3) ＞ 1</dd></dl>
+<dl style="color:#888888" class="main"><dt>母</dt><dd>4R </dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=(14*6) 【移動DEX×6】 (1D100&lt;=84) ＞ 62 ＞ 成功</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=13*4 DEX×4 (1D100&lt;=52) ＞ 49 ＞ 成功</dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=56 【SANチェック】 (1D100&lt;=56) ＞ 84 ＞ 失敗</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>CCB&lt;=11*3 CON×3 (1D100&lt;=33) ＞ 91 ＞ 失敗</dd></dl>
+<dl style="color:#41964f" class="main"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>1d6+1 (1D6+1) ＞ 6[6]+1 ＞ 7</dd></dl>
+<dl style="color:#888888" class="main"><dt>母</dt><dd>1d3 (1D3) ＞ 1</dd></dl>
+<dl style="color:#888888" class="main"><dt>母</dt><dd>5R </dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=80 【水泳】 (1D100&lt;=80) ＞ 46 ＞ 成功</dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=80 【水泳】 (1D100&lt;=80) ＞ 41 ＞ 成功</dd></dl>
+<dl style="color:#0000ff" class="main"><dt>  リタ・リートゥス</dt><dd>CCB&lt;=80 【水泳】 (1D100&lt;=80) ＞ 89 ＞ 失敗</dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt> KP</dt><dd>あなたに生きる意志はありますか？ </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>リタ君のために生きたいと思います </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt> KP</dt><dd>はい </dd></dl>
+<dl style="color:#888888" class="group tab_4"><dt> KP</dt><dd>『リタくんへ<br><br>手紙を書くのなんて、仕事以外だともう何年もしていないから…何を書けばいいのか、なんだか迷ってしまうね。それに相手がリタくんだから余計に困っちゃうな。…でも、せっかくだからおじさんのこと、今の気持ちを書いておこうと思う。<br><br>おじさんね、実はあまり住んでいたところでいいことがなくてね。いや、ないというか自分から捨ててしまったようなものなんだけど。<br>君にどうして流れてきたのか聞かれたとき、嘘をついてしまった。本当は、死ぬつもりで、全部を投げ出してしまうつもりで自ら海に入った。海が大好きな君が知ったら怒ってしまうかな？<br>ずっと苦しくて、何度も何度も自分の生を終わらせようと思った。でも、そのたびに怖くなってしまってね。<br><br>おじさんを最初に見つけてくれたのが君でよかったと思う。君は本当に優しくて思いやりがあって、この島の人たちに大切にしてもらっていることがわかる。そんな君が何も残ってないおじさんに手を差し伸べてくれて、本当にありがとう。<br><br>君はこの島に残ってほしい、一緒に居てほしいと言ってくれたね。本当に嬉しい。嬉しいけど、自分のような命を粗末にする人間がここに居ていいとは思えないんだ。きっと、このままだと前のように迷惑をかけてしまうから。<br><br>おじさんには、あのボトルメールの人と違って夢も何もない。全部、捨ててしまった。捨ててしまったのに、この島の人たちに会って、君に会って、ほんの少しだけ、生きたいと思ってしまった。…どこまでも優柔不断で嫌になってしまうよ。<br><br>まだ、この後どうするかは決められないけど、ちゃんと自分の未来は自分で決めようと思う。ちゃんと決めて、その答えをこの手紙じゃなくて直接君に言おうと思う。その時には、ここには書けなかったことも一緒に聞いてくれると嬉しいな。<br><br>リタくんのお友だちの、慶彦より』 </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>おじさんはどんな選択でも後悔しないよ；； </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>何選んでも地獄…？ </dd></dl>
+<dl style="color:#888888" class="group tab_4"><dt> KP</dt><dd>ヨシヒコへ<br><br>漢字がわからないから、カタカナですまない。<br><br>ヨシヒコはあまりこんなこと言われるのは嫌かもしれないけど……最初にヨシヒコの顔を見たとき、すごく綺麗で…本当に人魚が流れ着いたのかと思った。<br><br>でも、話していくうちに、島の外にも家族がいて、生活があって、ちゃんと生きている人間なんだなぁって……今でもヨシヒコの顔が近いと、ちょっとドキドキするけど。<br><br>だから、帰るのは……本当に仕方のないことだと思う。<br>でも、絶対に、絶対に、オレに言わないでいなくなったりしないで。<br><br>ヨシヒコはちゃんと、約束…守ってくれるって信じてるからな。<br><br>この島にいれば、オレが絶対にヨシヒコを傷付けさせない、オレがヨシヒコを一人にしない。<br><br>ヨシヒコの考えは変わりやすいかもしれないけど、<br>それでも、オレは絶対に一度決めたことは守るから。<br><br>海はずっと、空を見てるんだ。どんなに色が変わっても、自分もその色を映して。<br><br>ヨシヒコが、もし、ここにいてくれるんだったら、オレがヨシヒコの海になれたらいいな……<br><br>もし、離れたとしても……オレはずっと、ヨシヒコの友達で、弟だ。いつでも歓迎する。<br><br>リタ </dd></dl>
+<dl style="color:#888888" class="secret tab_1"><dt>HO①気絶、生かす選択</dt><dd>あの島は実現していて、<br>HO②も 確かに存在していた。<br>これからどうしたい？<br>生きていくか、<br>それとも<br>HO②と一緒にいたいか<br><br>あなたは3つの選択肢から選ぶことができます。<br>1.この世界で生きる<br>2.海へ帰る<br>3.命を絶つ </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>2です<br>少しRPしても？ </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>ジンゴォ </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>；；；； </dd></dl>
+<dl style="color:#41964f" class="secret tab_1"><dt>百々瀬　慶彦（ﾓﾓｾ ﾖｼﾋｺ）</dt><dd>ﾊｧ </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>うわあ… </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>ここで回収するのかぁ </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>あぁ… </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>お守り… </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>何かできたかなぁ </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>うみいいいいいいいいい </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>投げんのかよおおおおおおおお </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>決別… </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>名前うぇうぇうぇうぇ </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>全部出すじゃん… </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>死ぬが </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>オレが </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>死ぬんか </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt> KP</dt><dd>結婚して </dd></dl>
+
+</div>
+<footer></footer>
+
+<script>
+const Hide = (checkbox) => {
+  const elmntTarget = document.getElementsByClassName(checkbox.id)
+  for (let intCount = 0; intCount < elmntTarget.length; intCount++) {
+    const message = elmntTarget[intCount]
+    const contexts = message.className.split(' ')
+    let elmntChecked = checkbox.checked
+    contexts.forEach((context) => {
+      const contextCheckbox = document.getElementById(context)
+      if (contextCheckbox) {
+        elmntChecked &= contextCheckbox.checked
+      }
+    })
+    message.style.display = elmntChecked ? 'none' : ''
+  }
+}
+</script>
+</body>
+</html>
