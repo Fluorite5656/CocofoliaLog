@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<title>『ドロップアウトディスパイア』[all]</title>
+<style>
+*{margin:0;padding: 0;font-size: 14px;font-family : 'メイリオ',Meiryo,Osaka,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック','MS PGothic',sans-serif;}
+body{width: 100%;margin: 0;padding: 0;background-color: #f7f7f7;position: relative;}
+a{color: #666666;}
+a:hover{color: #CD0000;}
+h1{font-size: 21px;color: #666666;margin: 0px;padding: 0px;border-bottom: 1px solid #CCCCCC;}
+h2{font-size: 16px;color: #666666;margin: 5px;padding: 50px 0 0 0;border-bottom: 1px dotted #CCCCCC;}
+label{transition: all 0.2s;}
+#toggle{display: none;}
+#label_toggle{display: block;width: 100px;text-align: center;padding: 0;border: 2px solid #CD0000;background-color: #FFFFFF;color: #CD0000;border-radius: 15px;position: fixed;top: 10px;right: 10px;z-index: 1005;}
+#label_toggle:hover{background-color:#CD0000;color:#FFFFFF;}
+header{display: block;width: 0px;height: 100%;position: fixed;background-color: #FFFFFF;border-left: 1px solid #CCCCCC;z-index: 2;top: 0;right: 0;overflow-y: auto;overflow-x: hidden;transition: all 0.2s;padding: 50px 0 0 0;box-sizing: border-box;}
+#toggle:checked + header{width: 200px;}
+header label{display: block;width: 180px;margin:0 5px;padding: 5px;border-bottom: 1px dotted #EFEFEF;}
+header label input[type="checkbox"]{margin-right: 5px;}
+label:hover{cursor:pointer;background-color: #EFEFEF;}
+.wrapper{display: block;width: calc(100% - 30px);max-width: 1100px;padding: 30px 15px 100px 15px;margin: 0 AUTO;overflow: hidden;position: relative;background-color: #FFFFFF;}
+/* ログ部分 */
+dl{display: block;margin: 0;padding: 3px;box-sizing: border-box;}
+dl::after{display: block;content: "";clear: both;}
+dt{display: block;font-size: 0.8em;font-weight: bold;float: left;width: 100px;margin: 0;padding: 5px 5px;text-align: right;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+dd{display: block;width: calc(100% - 120px);margin: 0;padding: 2px;float: right;line-height: 1.8em;}
+.zatsudan{width: 95%;margin: 0 0 0 AUTO;background:#f7f7f7;border-left:1px solid #CCCCCC;}
+.other{background-color:#fff7ef;}
+.secret{width: 98%;margin: 0 0 0 AUTO;border-left:3px solid #CCCCCC;}
+.group{background:#f9f9f9;border-left:1px solid #CCCCCC;}
+@media (max-width:480px){
+  dt{display: inline-block;float: none;width: calc(100% - 6px);margin: 0;padding: 3px 0 0 3px;text-align: left;}
+  dd{display: inline-block;width: calc(100% - 6px);padding: 3px;float: none;}
+}
+</style>
+<style>
+.tab_0{}
+.tab_0.selected{display: none;}
+.tab_1{background-color:#e2fff2;border-color:#643420;}
+.tab_1.selected{display: none;}
+
+</style>
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+<style>* { font-family: sans-serif !important; }</style>
+<script src="norobot.js"></script>
+</head>
+<body>
+<label for="toggle" id="label_toggle">表示/非表示</label>
+<input type="checkbox" name="toggle" id="toggle">
+<header>
+<label>▽ 非表示にするタブ</label>
+<label for="main"><input type="checkbox" onClick="Hide(this)" class="checkbox" id="main">メイン</label>
+<label for="zatsudan"><input type="checkbox" onClick="Hide(this)" class="checkbox" id="zatsudan">雑談</label>
+<label for="tab_0"><input type="checkbox" onClick="Hide(this)" class="checkbox" id="tab_0">info</label><label for="tab_1"><input type="checkbox" onClick="Hide(this)" class="checkbox" id="tab_1">秘匿</label>
+</header>
+<div class="wrapper">
+<h1>『ドロップアウトディスパイア』[all]</h1>
+<h2 id="day1">『ドロップアウトディスパイア』[all]</h2>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=85 【日本刀】 (1D100&lt;=85) ＞ 42 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="zatsudan"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=80 【ナイフ】 (1D100&lt;=80) ＞ 27 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="zatsudan"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=67 【目星】 (1D100&lt;=67) ＞ 34 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="zatsudan"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=65 【聞き耳】 (1D100&lt;=65) ＞ 20 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="zatsudan"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=75 【図書館】 (1D100&lt;=75) ＞ 72 ＞ 成功  </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=65 【幸運】 (1D100&lt;=65) ＞ 38 ＞ 成功  </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=55 【知識】 (1D100&lt;=55) ＞ 63 ＞ 失敗  </dd></dl>
+<dl style="color:#009688" class="zatsudan"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=70 【知識】 (1D100&lt;=70) ＞ 7 ＞ スペシャル  </dd></dl>
+<dl style="color:#009688" class="zatsudan"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=45 【幸運】 (1D100&lt;=45) ＞ 7 ＞ スペシャル  </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=80 【回避】 (1D100&lt;=80) ＞ 90 ＞ 失敗  </dd></dl>
+<dl style="color:#009688" class="zatsudan"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=65 【キック】 (1D100&lt;=65) ＞ 6 ＞ スペシャル  </dd></dl>
+<dl style="color:#009688" class="zatsudan"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    1d6+1D4 【ダメージ判定】 (1D6+1D4) ＞ 4[4]+3[3] ＞ 7  </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=85 【日本刀】 (1D100&lt;=85) ＞ 49 ＞ 成功  </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=40 【居合】 (1D100&lt;=40) ＞ 43 ＞ 失敗  </dd></dl>
+<dl style="color:#009688" class="zatsudan"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=70 【回避】 (1D100&lt;=70) ＞ 55 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="zatsudan"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=55 【電気修理】 (1D100&lt;=55) ＞ 57 ＞ 失敗  </dd></dl>
+<dl style="color:#009688" class="zatsudan"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=85 【言いくるめ】 (1D100&lt;=85) ＞ 21 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="zatsudan"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=70 【母国語（日本語）】 (1D100&lt;=70) ＞ 69 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="zatsudan"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=45 【隠す】 (1D100&lt;=45) ＞ 35 ＞ 成功  </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d10+1D4 【日本刀】 (1D10+1D4) ＞ 1[1]+3[3] ＞ 4  </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d10+1D4 【日本刀】 (1D10+1D4) ＞ 4[4]+1[1] ＞ 5  </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d3+1D4 【ダメージ判定】 (1D3+1D4) ＞ 2[2]+3[3] ＞ 5  </dd></dl>
+<dl style="color:#009688" class="zatsudan"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    1d6+1D4 【ダメージ判定】 (1D6+1D4) ＞ 1[1]+2[2] ＞ 3  </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d10+1D4 【日本刀】 (1D10+1D4) ＞ 2[2]+4[4] ＞ 6  </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d10+1D4 【日本刀】 (1D10+1D4) ＞ 3[3]+3[3] ＞ 6  </dd></dl>
+<dl style="color:#009688" class="zatsudan"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    1d3+1D4 【ダメージ判定】 (1D3+1D4) ＞ 2[2]+4[4] ＞ 6  </dd></dl>
+<dl style="color:#009688" class="zatsudan"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    1d4+1D4 【ダメージ判定】 (1D4+1D4) ＞ 4[4]+3[3] ＞ 7  </dd></dl>
+<dl style="color:#009688" class="zatsudan"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    1d6+1D4 【ダメージ判定】 (1D6+1D4) ＞ 3[3]+1[1] ＞ 4  </dd></dl>
+<dl style="color:#009688" class="zatsudan"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    choice13 ド ロ ッ プ ア ウ ト デ ィ ス パ イ ア (choice13 ド ロ ッ プ ア ウ ト デ ィ ス パ イ ア) ＞ ア ロ デ ッ ア ス ィ プ ウ ド ト パ イ  </dd></dl>
+<dl style="color:#009688" class="zatsudan"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    choice13 ド ロ ッ プ ア ウ ト デ ィ ス パ イ ア (choice13 ド ロ ッ プ ア ウ ト デ ィ ス パ イ ア) ＞ ウ ド プ ス パ デ ト ア ィ ア イ ロ ッ  </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=65 【幸運】 (1D100&lt;=65) ＞ 100 ＞ 致命的失敗  </dd></dl>
+<dl style="color:#009688" class="zatsudan"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=45 【幸運】 (1D100&lt;=45) ＞ 9 ＞ スペシャル  </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d100&lt;=65 【正気度ロール】 (1D100&lt;=65) ＞ 51 ＞ 成功  </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=80 【回避】 (1D100&lt;=80) ＞ 20 ＞ 成功  </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    ２２時   </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=85 【日本刀】 (1D100&lt;=85) ＞ 93 ＞ 失敗  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=80 【ナイフ】 (1D100&lt;=80) ＞ 21 ＞ 成功  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=85 【日本刀】 (1D100&lt;=85) ＞ 36 ＞ 成功  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=80 【目星】 (1D100&lt;=80) ＞ 73 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=67 【目星】 (1D100&lt;=67) ＞ 47 ＞ 成功  </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    路地裏　ローブ　素足　走っていった   </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    しらいし のあ　   </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    浮かない表情   </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    頼みたいこと   </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    とある本の取引予定だった<br>さっき、取られた<br>分厚い、赤いカバーの本、<br>取ったやつは殺していい<br>茶色い帽子とトレンチコート、緑の石のペンダント、40代の白髪のおじさん   </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=80 【ナイフ】 (1D100&lt;=80) ＞ 50 ＞ 成功  </dd></dl>
+<dl style="color:#888888" class="main"><dt>糸繰 彰人</dt><dd>    CCB&lt;=14 【回避】 (1D100&lt;=14) ＞ 63 ＞ 失敗  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    1d4+1D4 【ダメージ判定】 (1D4+1D4) ＞ 4[4]+4[4] ＞ 8  </dd></dl>
+<dl style="color:#888888" class="main"><dt>糸繰 彰人</dt><dd>    CCB&lt;=11 【CON】 (1D100&lt;=11) ＞ 80 ＞ 失敗  </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    家にある   </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    娘に渡す　ナナ　   </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=80 【目星】 (1D100&lt;=80) ＞ 67 ＞ 成功  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=80 【聞き耳】 (1D100&lt;=80) ＞ 85 ＞ 失敗  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=67 【目星】 (1D100&lt;=67) ＞ 78 ＞ 失敗  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=65 【聞き耳】 (1D100&lt;=65) ＞ 88 ＞ 失敗  </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    赤い瞳の少女<br>この遺書を、時間がない<br>背中から何かが出てくる   </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d100&lt;=65 【正気度ロール】 (1D100&lt;=65) ＞ 49 ＞ 成功  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d4 (1D4) ＞ 3  </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ 朝倉 永吉 (あさくら　えいきち) ] SAN : 65 → 62   </dd></dl>
+<dl style="color:#888888" class="group tab_0"><dt>糸繰 彰人</dt><dd>    【帽子の男の遺書】<br>「奈々へ。<br>こんな父親ですまない。せっかく母さんの元に行けた君を、<br>神の力を借りてこちらに戻そうとした僕に罰が下った。でもあの本に書いてあることに頼るしかなかった。<br>君を化け物にしたかったわけではないんだ。<br>本当に、すまない。<br>僕もここまで堕ちてしまった。君に今度こそ光と明日がありますように。」   </dd></dl>
+<dl style="color:#009688" class="secret tab_1"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    1d100&lt;=45 【正気度ロール】 (1D100&lt;=45) ＞ 35 ＞ 成功  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d100&lt;=62 【正気度ロール】 (1D100&lt;=62) ＞ 55 ＞ 成功  </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ 長浦 光浩 (ながうら みちひろ) ] SAN : 45 → 44   </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d100&lt;=62 【正気度ロール】 (1D100&lt;=62) ＞ 15 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    1d100&lt;=44 【正気度ロール】 (1D100&lt;=44) ＞ 80 ＞ 失敗  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    1D3 (1D3) ＞ 2  </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ 朝倉 永吉 (あさくら　えいきち) ] SAN : 62 → 61   </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ 長浦 光浩 (ながうら みちひろ) ] SAN : 44 → 42   </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=1 【鍵開け】 (1D100&lt;=1) ＞ 80 ＞ 失敗  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=1 【鍵開け】 (1D100&lt;=1) ＞ 77 ＞ 失敗  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=80 【目星】 (1D100&lt;=80) ＞ 24 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="group tab_0"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    机、本棚、クローゼット   </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    置物　イゴーロナク   </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=80 【目星】 (1D100&lt;=80) ＞ 22 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=67 【目星】 (1D100&lt;=67) ＞ 48 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="group tab_0"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    Y'golonac   </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=15 【英語】 (1D100&lt;=15) ＞ 57 ＞ 失敗  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=15 【ほかの言語（英語）】 (1D100&lt;=15) ＞ 15 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="zatsudan"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    1D10  (1D10) ＞ 3  </dd></dl>
+<dl style="color:#009688" class="zatsudan"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    1D4  (1D4) ＞ 2  </dd></dl>
+<dl style="color:#009688" class="group tab_0"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    【雑な翻訳メモ】<br>「それは、暗闇と共に有り。ばぐ＝しゃあす それは死者を蘇らせるもの。<br>落とし子を引き連れ、 贄を貪り食うが、
+<br>光ある場所には来ず。 光を嫌う。
+<br>ばぐ＝しゃあす 消えしとき 死者はあるべき姿に戻る。」
+<br>（以下は何かの方法について記されているが、日本語で書いてあるものの、
+<br>意味不明な何かのやり方が書いてあるだけだ。すぐに理解することはできない。） 
+  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=80 【目星】 (1D100&lt;=80) ＞ 50 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=67 【目星】 (1D100&lt;=67) ＞ 6 ＞ スペシャル  </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    グラーキの黙示録   </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    悪意に宿るもの   </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d100&lt;=61 【正気度ロール】 (1D100&lt;=61) ＞ 69 ＞ 失敗  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d4 (1D4) ＞ 2  </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ 朝倉 永吉 (あさくら　えいきち) ] SAN : 61 → 59   </dd></dl>
+<dl style="color:#009688" class="group tab_0"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    【挟まっていたメモ】<br>招来されたバグ＝シャースに少しだけ細工をした。<br>それは特殊な落とし子であり、人々に寄生し絶望させるもの、
+<br>それを「ディスパイア」と呼ぶことにした。
+<br>ディスパイアは母体であるバグ＝シャースとは違い行動性が高く、対象となる人間を
+<br>一度殺してその人物に寄生する。
+<br>寄生された人物は時間が経つとディスパイアに耐えられず死亡し、ディスパイアはま
+<br>た別の人間に寄生する。
+<br>寄生された人物はその存在を知らぬ限りは自身が「ディスパイア」である事を自覚す
+<br>ることができない。母体と同じ光が苦手なため、動けるのは夜だけだ。
+<br>日光にさらされればたちまち消滅する。
+<br>（続きがあるようだが、ここでメモは破られている。） 
+  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=80 【目星】 (1D100&lt;=80) ＞ 74 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=67 【目星】 (1D100&lt;=67) ＞ 26 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=65+20 【聞き耳】 (1D100&lt;=85) ＞ 56 ＞ 成功  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=95 【聞き耳】 (1D100&lt;=95) ＞ 7 ＞ スペシャル  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d100&lt;=59 【正気度ロール】 (1D100&lt;=59) ＞ 40 ＞ 成功  </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ 朝倉 永吉 (あさくら　えいきち) ] SAN : 59 → 58   </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    1d100&lt;=42 【正気度ロール】 (1D100&lt;=42) ＞ 45 ＞ 失敗  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    1D4  (1D4) ＞ 1  </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ 長浦 光浩 (ながうら みちひろ) ] SAN : 42 → 41   </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=65 【キック】 (1D100&lt;=65) ＞ 81 ＞ 失敗  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=40 【居合】 (1D100&lt;=40) ＞ 31 ＞ 成功  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=85 【日本刀】 (1D100&lt;=85) ＞ 77 ＞ 成功  </dd></dl>
+<dl style="color:#888888" class="main"><dt>アンデット</dt><dd>    CCB&lt;=10 【回避】 (1D100&lt;=10) ＞ 4 ＞ 決定的成功  </dd></dl>
+<dl style="color:#888888" class="main"><dt>アンデット</dt><dd>    x3 choice[光浩,永吉]対象決定 #1(choice[光浩,永吉]) ＞ 永吉
+#2
+(choice[光浩,永吉]) ＞ 永吉
+
+#3
+(choice[光浩,永吉]) ＞ 永吉
+  </dd></dl>
+<dl style="color:#888888" class="main"><dt>アンデット</dt><dd>    x3 CCB&lt;=25 【ひしゃげた鉄パイプ】 #1(1D100&lt;=25) ＞ 29 ＞ 失敗
+#2
+(1D100&lt;=25) ＞ 6 ＞ 成功
+
+#3
+(1D100&lt;=25) ＞ 42 ＞ 失敗
+  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=80 【回避】 (1D100&lt;=80) ＞ 36 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=80 【ナイフ】 (1D100&lt;=80) ＞ 16 ＞ スペシャル  </dd></dl>
+<dl style="color:#888888" class="main"><dt>アンデット</dt><dd>    CCB&lt;=10 【回避】 (1D100&lt;=10) ＞ 87 ＞ 失敗  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    1d4+1D4 【ダメージ判定】 (1D4+1D4) ＞ 1[1]+3[3] ＞ 4  </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ アンデット ] HP① : 10 → 6   </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=85 【日本刀】 (1D100&lt;=85) ＞ 95 ＞ 失敗  </dd></dl>
+<dl style="color:#888888" class="main"><dt>アンデット</dt><dd>    x3 choice[光浩,永吉]対象決定 #1(choice[光浩,永吉]) ＞ 永吉
+#2
+(choice[光浩,永吉]) ＞ 永吉
+
+#3
+(choice[光浩,永吉]) ＞ 光浩
+  </dd></dl>
+<dl style="color:#888888" class="main"><dt>アンデット</dt><dd>    x3 CCB&lt;=25 【ひしゃげた鉄パイプ】 #1(1D100&lt;=25) ＞ 54 ＞ 失敗
+#2
+(1D100&lt;=25) ＞ 48 ＞ 失敗
+
+#3
+(1D100&lt;=25) ＞ 90 ＞ 失敗
+  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=80 【ナイフ】 (1D100&lt;=80) ＞ 73 ＞ 成功  </dd></dl>
+<dl style="color:#888888" class="main"><dt>アンデット</dt><dd>    CCB&lt;=10 【回避】 (1D100&lt;=10) ＞ 73 ＞ 失敗  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    1d4+1D4 【ダメージ判定】 (1D4+1D4) ＞ 4[4]+2[2] ＞ 6  </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ アンデット ] HP① : 6 → 0   </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=85 【日本刀】 (1D100&lt;=85) ＞ 48 ＞ 成功  </dd></dl>
+<dl style="color:#888888" class="main"><dt>アンデット</dt><dd>    CCB&lt;=10 【回避】 (1D100&lt;=10) ＞ 46 ＞ 失敗  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d10+1D4 【日本刀】 (1D10+1D4) ＞ 1[1]+1[1] ＞ 2  </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ アンデット ] HP② : 10 → 8   </dd></dl>
+<dl style="color:#888888" class="main"><dt>アンデット</dt><dd>    x3 choice[光浩,永吉]対象決定 #1(choice[光浩,永吉]) ＞ 光浩
+#2
+(choice[光浩,永吉]) ＞ 光浩
+
+#3
+(choice[光浩,永吉]) ＞ 光浩
+  </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ アンデット ] 残数 : 3 → 2   </dd></dl>
+<dl style="color:#888888" class="main"><dt>アンデット</dt><dd>    x2 CCB&lt;=25 【ひしゃげた鉄パイプ】 #1(1D100&lt;=25) ＞ 25 ＞ 成功
+#2
+(1D100&lt;=25) ＞ 64 ＞ 失敗
+  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=70 【回避】 (1D100&lt;=70) ＞ 64 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=65 【キック】 (1D100&lt;=65) ＞ 41 ＞ 成功  </dd></dl>
+<dl style="color:#888888" class="main"><dt>アンデット</dt><dd>    CCB&lt;=10 【回避】 (1D100&lt;=10) ＞ 86 ＞ 失敗  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    1d6+1D4 【ダメージ判定】 (1D6+1D4) ＞ 3[3]+1[1] ＞ 4  </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ アンデット ] HP② : 8 → 4   </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=85 【日本刀】 (1D100&lt;=85) ＞ 65 ＞ 成功  </dd></dl>
+<dl style="color:#888888" class="main"><dt>アンデット</dt><dd>    CCB&lt;=10 【回避】 (1D100&lt;=10) ＞ 96 ＞ 致命的失敗  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d10+1D4 【日本刀】 (1D10+1D4) ＞ 4[4]+2[2] ＞ 6  </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ アンデット ] HP② : 4 → 0   </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ アンデット ] HP③ : 10 → 8   </dd></dl>
+<dl style="color:#888888" class="main"><dt>アンデット</dt><dd>    x2 choice[光浩,永吉]対象決定 #1(choice[光浩,永吉]) ＞ 永吉
+#2
+(choice[光浩,永吉]) ＞ 永吉
+  </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ アンデット ] 残数 : 2 → 1   </dd></dl>
+<dl style="color:#888888" class="main"><dt>アンデット</dt><dd>    CCB&lt;=25 【ひしゃげた鉄パイプ】 (1D100&lt;=25) ＞ 47 ＞ 失敗  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=80 【ナイフ】 (1D100&lt;=80) ＞ 95 ＞ 失敗  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=85 【日本刀】 (1D100&lt;=85) ＞ 57 ＞ 成功  </dd></dl>
+<dl style="color:#888888" class="main"><dt>アンデット</dt><dd>    x2 CCB&lt;=10 【回避】 #1(1D100&lt;=10) ＞ 87 ＞ 失敗
+#2
+(1D100&lt;=10) ＞ 7 ＞ 成功
+  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d10+1D4 【日本刀】 (1D10+1D4) ＞ 10[10]+1[1] ＞ 11  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d100&lt;=58 【正気度ロール】 (1D100&lt;=58) ＞ 73 ＞ 失敗  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    1d100&lt;=41 【正気度ロール】 (1D100&lt;=41) ＞ 15 ＞ 成功  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d3 (1D3) ＞ 3  </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ 長浦 光浩 (ながうら みちひろ) ] SAN : 41 → 40   </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ 朝倉 永吉 (あさくら　えいきち) ] SAN : 58 → 55   </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=75 【アイデア】 (1D100&lt;=75) ＞ 52 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=70 【アイデア】 (1D100&lt;=70) ＞ 100 ＞ 致命的失敗  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=70 【知識】 (1D100&lt;=70) ＞ 37 ＞ 成功  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=55 【知識】   </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=55 【知識】 (1D100&lt;=55) ＞ 65 ＞ 失敗  </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ 長浦 光浩 (ながうら みちひろ) ] HP : 13 → 12   </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=30 【応急手当】 (1D100&lt;=30) ＞ 8 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="group tab_0"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    ・この場所から少し離れた場所にある廃教会の位置を表していることが分かる。<br>周辺には木々が生い茂った場所があり、最近は近辺に高速道路が出来たために、工事の関係上そのうち壊されるであろう古い建物だ。   </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d3 (1D3) ＞ 2  </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ 長浦 光浩 (ながうら みちひろ) ] HP : 12 → 13   </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=75/3 【アイデア】 (1D100&lt;=25) ＞ 98 ＞ 致命的失敗  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=70/3 【アイデア】 (1D100&lt;=23) ＞ 88 ＞ 失敗  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=15*5 【CON × 5】 (1D100&lt;=75) ＞ 91 ＞ 失敗  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    CCB&lt;=12*5 【CON × 5】 (1D100&lt;=60) ＞ 46 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="secret tab_1"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    永くんへ<br><br>君は素直な良い子なのに、こんな嘘つきな僕に付き合わせちゃってごめんね<br>いままで僕と一緒にいてくれてありがとう<br>僕の名前を呼んでくれてありがとう<br>君のおかげで、僕は幸せでした<br><br>僕の家は好きに使ってください<br>僕がいなくても、ちゃんと温かいご飯を食べて、温かい布団で寝て、ずっと君らしく、健やかであってください<br><br>長浦 知優(ながうら ちひろ)   </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    ちひろ   </dd></dl>
+<dl style="color:#009688" class="group tab_0"><dt>長浦 光浩 (ながうら みちひろ)</dt><dd>    知優   </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    みちひろはお父さんの名前   </dd></dl>
+<dl style="color:#03a9f4" class="group tab_0"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    『名もなき夜　永き旅路に　月を置く<br>光のありて　路（みち）となりけり』<br><br>光浩へ<br><br>遅かれ早かれ、俺みたいな人間はそう長くは生きられない。<br>いつか、こうして言葉を遺す日が来るだろうとずっと思っていた。<br><br>不思議なものだ。<br>あんなにも冷えきっていた俺の暮らしは、あなたと日々を共にするようになってから、少しずつ、温かいものに変わっていった。<br><br>あなたの語る遺書は、最初は正直面倒くさいと思っていた。<br>けど次第にわかった。<br>誰かの人生の終わりに言葉を添えることが、どれほど誠実な行いかということを。<br>そして、そんな世界で、あなたと共に歩けたことは、俺の誇りだ。<br><br>あなたのおかげで、俺の短い人生はとても充実していた。<br>心から感謝している。本当に、お世話になりました。<br><br>あなたの旅路が穏やかであることを、月の下で願っています。<br><br>永吉   </dd></dl>
+<dl style="color:#03a9f4" class="group tab_0"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    自身の人生を「名もなき夜」と捉え、「月を置く」は死を象徴する表現。だが、光浩の存在がその人生に“意味ある道”を与えた。   </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=5 【心理学】 (1D100&lt;=5) ＞ 42 ＞ 失敗  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    CCB&lt;=85 【言いくるめ】 (1D100&lt;=85) ＞ 91 ＞ 失敗  </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    ライターで回復不可のダメージ   </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=65 【幸運】 (1D100&lt;=65) ＞ 98 ＞ 致命的失敗  </dd></dl>
+<dl style="color:#009688" class="zatsudan"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    CCB&lt;=45 【幸運】 (1D100&lt;=45) ＞ 4 ＞ 決定的成功/スペシャル  </dd></dl>
+<dl style="color:#009688" class="zatsudan"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    choice13 ド ロ ッ プ ア ウ ト デ ィ ス パ イ ア (choice13 ド ロ ッ プ ア ウ ト デ ィ ス パ イ ア) ＞ ウ ッ ト ロ ド ィ デ プ パ ア イ ア ス  </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    choice13 ド ロ ッ プ ア ウ ト デ ィ ス パ イ ア (choice13 ド ロ ッ プ ア ウ ト デ ィ ス パ イ ア) ＞ ッ ィ ア ド ス パ ト プ イ ロ ア ウ デ  </dd></dl>
+<dl style="color:#009688" class="zatsudan"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    choice13 ド ロ ッ プ ア ウ ト デ ィ ス パ イ ア (choice13 ド ロ ッ プ ア ウ ト デ ィ ス パ イ ア) ＞ ト ア ス デ イ ア ロ ィ プ ッ ド パ ウ  </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    近くに高速道路　   </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d100&lt;=55 【正気度ロール】 (1D100&lt;=55) ＞ 53 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    1d100&lt;=40 【正気度ロール】 (1D100&lt;=40) ＞ 40 ＞ 成功  </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ 朝倉 永吉 (あさくら　えいきち) ] SAN : 55 → 54   </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ 長浦 知優 (ながうら ちひろ) ] SAN : 40 → 39   </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ 朝倉 永吉 (あさくら　えいきち) ] SAN : 54 → 55   </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    教会の前に死体　しらいし　メモを持ってる   </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d100&lt;=54 【正気度ロール】 (1D100&lt;=54) ＞ 30 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    1d100&lt;=39 【正気度ロール】 (1D100&lt;=39) ＞ 79 ＞ 失敗  </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ 長浦 知優 (ながうら ちひろ) ] SAN : 39 → 38   </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d100&lt;=54 【正気度ロール】 (1D100&lt;=54) ＞ 64 ＞ 失敗  </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ 朝倉 永吉 (あさくら　えいきち) ] SAN : 54 → 53   </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    CCB&lt;=5 【医学】 (1D100&lt;=5) ＞ 61 ＞ 失敗  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=15 【医学】 (1D100&lt;=15) ＞ 83 ＞ 失敗  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=80 【目星】 (1D100&lt;=80) ＞ 54 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    CCB&lt;=67 【目星】 (1D100&lt;=67) ＞ 69 ＞ 失敗  </dd></dl>
+<dl style="color:#009688" class="group tab_0"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    【メモの破片】<br>またディスパイアには「権限」という特殊な効果をもち、寄生された人間に大きく関わっているものが、「ディスパイアの近くで発生した死体」に影響することがある。<br><br>寄生されたディスパイアを取り除けば、元々それが死者ではなく生者であればディスパイアに殺害される前の生者に戻るが、元々死者に寄生していた場合は、あるべき姿に戻る。<br><br>母体が居ない場合、ディスパイアは最後に寄生された人物が死んだ時点で退散する。<br><br>ディスパイアが寄生した人物が死ぬ前に取り除くには、母体であるバグ＝シャースを日光、または炎の光など強い「光」で追い払い、後に<br>（ここでメモは破られている）   </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=75+20 【アイデア】 (1D100&lt;=95) ＞ 85 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="group tab_0"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    ＜アイデア＞成功情報 <br>・この紙は、普通の紙ではなく特殊な素材でできており、強い発火性があるものであることが分かる。少女が HO1 に渡したものと
+この紙束を一緒にして火をつければ強い勢いで燃えるだろう。 
+  </dd></dl>
+<dl style="color:#03a9f4" class="zatsudan"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    バグシャースに光を当てるために紙が使える   </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    CCB&lt;=16*5 【DEX × 5】 (1D100&lt;=80) ＞ 61 ＞ 成功  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=12*5 【DEX × 5】 (1D100&lt;=60) ＞ 53 ＞ 成功  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d100&lt;=53 【正気度ロール】 (1D100&lt;=53) ＞ 92 ＞ 失敗  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    1d100&lt;=38 【正気度ロール】 (1D100&lt;=38) ＞ 58 ＞ 失敗  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    1D20  (1D20) ＞ 8  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d20 (1D20) ＞ 12  </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ 朝倉 永吉 (あさくら　えいきち) ] SAN : 53 → 41   </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ 長浦 知優 (ながうら ちひろ) ] SAN : 38 → 30   </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d10 (1D10) ＞ 9  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    1D10  (1D10) ＞ 5  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    1D100  (1D100) ＞ 30  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    1D100  (1D100) ＞ 19  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=75 【アイデア】 (1D100&lt;=75) ＞ 11 ＞ スペシャル  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    CCB&lt;=70 【アイデア】 (1D100&lt;=70) ＞ 69 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="group tab_0"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    ＜アイデア＞成功情報 <br>あの黒い塊は、死体を覆い被さるようにゆっくりと貪っていた。<br>危険な方法ではあるが、あの中であれば、あの怪物にだけ
+<br>光を当てることが出来るのでは無いかと思うだろう。 
+  </dd></dl>
+<dl style="color:#888888" class="main"><dt>バグシャース</dt><dd>    CCB&lt;=60 【覆い被さる】 (1D100&lt;=60) ＞ 30 ＞ 成功  </dd></dl>
+<dl style="color:#bd97d1" class="main"><dt>KP</dt><dd>    1D3+4 (1D3+4) ＞ 1[1]+4 ＞ 5  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    CCB&lt;=80 【ナイフ】 (1D100&lt;=80) ＞ 26 ＞ 成功  </dd></dl>
+<dl style="color:#888888" class="main"><dt>白石 希空？</dt><dd>    CCB&lt;=30 【回避】 (1D100&lt;=30) ＞ 97 ＞ 致命的失敗  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    2D3+1D4 【ダメージ判定】 (2D3+1D4) ＞ 6[3,3]+4[4] ＞ 10  </dd></dl>
+<dl style="color:#888888" class="main"><dt>白石 希空？</dt><dd>    choice[光浩,永吉]対象決定 (choice[光浩,永吉]) ＞ 永吉  </dd></dl>
+<dl style="color:#888888" class="main"><dt>白石 希空？</dt><dd>    CCB&lt;=80 【手で貪り喰う】 (1D100&lt;=80) ＞ 86 ＞ 失敗  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=40 【居合】 (1D100&lt;=40) ＞ 23 ＞ 成功  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=85 【日本刀】 (1D100&lt;=85) ＞ 83 ＞ 成功  </dd></dl>
+<dl style="color:#888888" class="main"><dt>白石 希空？</dt><dd>    CCB&lt;=30/2 【回避(2回目)】 (1D100&lt;=15) ＞ 51 ＞ 失敗  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d10+1D4 【日本刀】 (1D10+1D4) ＞ 3[3]+1[1] ＞ 4  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d10+1D4 【日本刀】 (1D10+1D4) ＞ 10[10]+3[3] ＞ 13  </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ KP ] ラウンド : 1 → 2   </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    CCB&lt;=80 【ナイフ】 (1D100&lt;=80) ＞ 32 ＞ 成功  </dd></dl>
+<dl style="color:#888888" class="main"><dt>白石 希空？</dt><dd>    CCB&lt;=30 【回避】 (1D100&lt;=30) ＞ 13 ＞ 成功  </dd></dl>
+<dl style="color:#888888" class="main"><dt>白石 希空？</dt><dd>    choice[光浩,永吉]対象決定 (choice[光浩,永吉]) ＞ 光浩  </dd></dl>
+<dl style="color:#888888" class="main"><dt>白石 希空？</dt><dd>    CCB&lt;=80 【手で貪り喰う】 (1D100&lt;=80) ＞ 9 ＞ スペシャル  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    CCB&lt;=70 【回避】 (1D100&lt;=70) ＞ 68 ＞ 成功  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=85 【日本刀】 (1D100&lt;=85) ＞ 89 ＞ 失敗  </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ KP ] ラウンド : 2 → 3   </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    CCB&lt;=80 【ナイフ】 (1D100&lt;=80) ＞ 86 ＞ 失敗  </dd></dl>
+<dl style="color:#888888" class="main"><dt>白石 希空？</dt><dd>    choice[光浩,永吉]対象決定 (choice[光浩,永吉]) ＞ 光浩  </dd></dl>
+<dl style="color:#888888" class="main"><dt>白石 希空？</dt><dd>    CCB&lt;=80 【手で貪り喰う】 (1D100&lt;=80) ＞ 71 ＞ 成功  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    CCB&lt;=70 【回避】 (1D100&lt;=70) ＞ 50 ＞ 成功  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=85 【日本刀】 (1D100&lt;=85) ＞ 3 ＞ 決定的成功/スペシャル  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d10+1D4 【日本刀】 (1D10+1D4) ＞ 4[4]+4[4] ＞ 8  </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ KP ] ラウンド : 3 → 4   </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    CCB&lt;=80 【ナイフ】 (1D100&lt;=80) ＞ 1 ＞ 決定的成功/スペシャル  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    1d4+1D4 【ダメージ判定】 (1D4+1D4) ＞ 1[1]+2[2] ＞ 3  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    CCB&lt;=80 【目星】 (1D100&lt;=80) ＞ 4 ＞ 決定的成功/スペシャル  </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt>白石 希空？</dt><dd>    1D4【ダメージ(回復不可)／手で貪り喰う】   </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    TRUE END【「遺書屋」】<br>にてシナリオを終了する。<br><br>【TRUE END 生還報酬】 <br>
+<br>全員生還＋1d10
+<br>TRUE END＋1d6
+<br>希空（イゴーロナク）の殺害に成功した＋1d6
+<br>クトゥルフ神話＋2%<br>
+<br>【詳細】 
+<br>・HO1 に寄生していたディスパイアは退散し、
+お互いにまた遺書屋としてこの裏社会で生きていくこととなる。
+<br>もちろん、遺書屋を続けるか否かは探索者達次第だ。以降継続探索者として使用可
+能だ。 
+  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    2D6+1D10 (2D6+1D10) ＞ 8[5,3]+4[4] ＞ 12  </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d10+2d6 (1D10+2D6) ＞ 10[10]+3[1,2] ＞ 13  </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ 長浦 知優 (ながうら ちひろ) ] SAN : 30 → 42   </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>    [ 朝倉 永吉 (あさくら　えいきち) ] SAN : 41 → 54   </dd></dl>
+<dl style="color:#03a9f4" class="main"><dt>朝倉 永吉 (あさくら　えいきち)</dt><dd>    1d6 (1D6) ＞ 4  </dd></dl>
+<dl style="color:#009688" class="main"><dt>長浦 知優 (ながうら ちひろ)</dt><dd>    1D6  (1D6) ＞ 1  </dd></dl>
+
+</div>
+<footer></footer>
+
+<script>
+const Hide = (checkbox) => {
+  const elmntTarget = document.getElementsByClassName(checkbox.id)
+  for (let intCount = 0; intCount < elmntTarget.length; intCount++) {
+    const message = elmntTarget[intCount]
+    const contexts = message.className.split(' ')
+    let elmntChecked = checkbox.checked
+    contexts.forEach((context) => {
+      const contextCheckbox = document.getElementById(context)
+      if (contextCheckbox) {
+        elmntChecked &= contextCheckbox.checked
+      }
+    })
+    message.style.display = elmntChecked ? 'none' : ''
+  }
+}
+</script>
+</body>
+</html>
